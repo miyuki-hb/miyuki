@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "@miyuki/typescript-config/backend.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "resolveJsonModule": true,
+        "module": "commonjs"
+    },
+    "include": [
+        "src/**/*.ts", 
+        "src/**/*.tsx", 
+        "src/**/*.js", 
+        "src/**/*.jsx", 
+    ],
+    "exclude": ["node_modules", "dist", "build", "coverage"],
+}

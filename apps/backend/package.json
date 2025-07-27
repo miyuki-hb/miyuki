@@ -1,0 +1,30 @@
+{
+  "name": "miyuki/backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --files src/index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "drizzle-orm": "^0.44.3",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@miyuki/eslint-config": "workspace:*",
+    "@miyuki/typescript-config": "workspace:*",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.3",
+    "@types/node": "^20.8.5",
+    "drizzle-kit": "^0.31.4",
+    "esbuild": "^0.25.6",
+    "eslint": "^9.31.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "5.8.2"
+  }
+}
