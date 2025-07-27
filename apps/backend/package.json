@@ -5,7 +5,10 @@
   "scripts": {
     "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --files src/index.ts"
+    "dev": "ts-node-dev --files src/index.ts",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "drizzle-kit seed",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
